@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courier Service</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Courier Service</h1>
+        <p>Track your shipment easily!</p>
+    </header>
+    
+    <main>
+        <section id="tracking-form">
+            <h2>Track Your Package</h2>
+            <input type="text" id="tracking-number" placeholder="Enter Tracking Number" required>
+            <button onclick="trackPackage()">Track</button>
+        </section>
+
+        <section id="tracking-info" style="display: none;">
+            <h2>Tracking Information</h2>
+            <div id="info"></div>
+            <button onclick="resetTracking()">Track Another Package</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Courier Service. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
